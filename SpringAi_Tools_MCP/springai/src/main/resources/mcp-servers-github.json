@@ -1,0 +1,28 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "C:/Program Files/nodejs/npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem@latest",
+        "D:/LEARN_AI/SpringAI/mcpdir"
+      ]
+    },
+    "github": {
+      "command": "wsl",
+      "args": [
+        "docker",
+        "run",
+        "-i",
+        "--rm",
+        "-e",
+        "GITHUB_PERSONAL_ACCESS_TOKEN",
+        "ghcr.io/github/github-mcp-server"
+      ],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "${GITHUB_PERSONAL_ACCESS_TOKEN}",
+        "WSLENV": "GITHUB_PERSONAL_ACCESS_TOKEN"
+      }
+    }
+  }
+}

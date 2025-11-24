@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "C:/Program Files/nodejs/npx.cmd",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem@latest",
+        "D:/LEARN_AI/SpringAI/mcpdir"
+      ]
+    },
+    "favmovies": {
+      "command": "java",
+      "args": [
+        "-jar",
+        "D:/LEARN_AI/SpringAI/springai/mcpstdio/target/mcpstdio-0.0.1-SNAPSHOT.jar"
+      ]
+    }
+  }
+}
